@@ -1,0 +1,34 @@
+---
+# Ambiente
+env: stage
+timezone: Europe/Rome
+
+# Utenti
+ansible_user: ansible
+default_user: deploy
+default_group: deploy
+
+# Percorsi standard
+base_dir: /opt/app
+log_dir: /var/log/app
+config_dir: /etc/app
+
+# Pacchetti comuni
+common_packages:
+  - vim
+  - curl
+  - wget
+  - git
+
+# Servizio applicativo
+app_name: myapp
+app_port: 8080
+app_service_name: myapp.service
+
+# Repository
+git_repo_url: git@github.com:Livio18/ansibleTestingStage.git
+git_branch: main
+
+# Feature flags (banalissimi ma utilissimi)
+enable_firewalld: true
+enable_selinux: false
