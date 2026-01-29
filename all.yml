@@ -22,7 +22,7 @@ common_packages:
 
 # Servizio applicativo
 app_name: myapp
-app_port: 9999999999999
+app_port: 9999
 app_service_name: myapp.service
 
 # Repository
