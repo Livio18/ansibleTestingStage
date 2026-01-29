@@ -22,7 +22,7 @@ common_packages:
 
 # Servizio applicativo
 app_name: myapp
-app_port: sigma
+app_port: valoreNuovo
 app_service_name: myapp.service
 
 # Repository
